@@ -26,8 +26,6 @@ cargo build --release
 
 - `-i, --input` — Path to the input image (PNG recommended)
 - `-o, --output` — Path to the output image (PNG recommended)
-- `--password` — The password to hide
-- `--passphrase` — Passphrase for encryption and pixel order randomization
 
 ### Extract a Password
 
@@ -36,7 +34,6 @@ cargo build --release
 ```
 
 - `-i, --input` — Path to the stego image
-- `--passphrase` — Passphrase used during hiding
 
 ## Example
 

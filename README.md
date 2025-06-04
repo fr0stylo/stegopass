@@ -3,6 +3,7 @@
 A command-line tool to securely hide and retrieve encrypted passwords in images using steganography and strong cryptography.
 
 ## Features
+
 - Hides encrypted passwords inside lossless images (PNG recommended) using LSB steganography
 - Uses Argon2 for key derivation and AES-GCM for encryption
 - Passphrase-protected: only the correct passphrase can decrypt the hidden password
@@ -41,10 +42,10 @@ cargo build --release
 
 ```
 # Hide a password
-./target/release/stegopass hide -i cover.png -o stego.png --password "mysecret" --passphrase "hunter2"
+./target/release/stegopass hide -i cover.png -o stego.png
 
 # Extract the password
-./target/release/stegopass extract -i stego.png --passphrase "hunter2"
+./target/release/stegopass extract -i stego.png
 ```
 
 ## Notes
